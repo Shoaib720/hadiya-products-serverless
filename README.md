@@ -2,6 +2,12 @@
 
 In this POC project we are going to deploy an Angular and NodeJS application to AWS Serverless environment.
 
+## Screenshots
+
+![Home Page](./images/list-products.png)
+
+![Update Page](./images/update-product.png)
+
 ## Architecture
 
 ![Architecture Diagram](./images/hadiya-products-serverless-s3.png)
