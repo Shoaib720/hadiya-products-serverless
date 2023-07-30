@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiGatewayURL: 'https://products-api.almikhdaam.co.in/api/v1'
+  apiGatewayURL: '<PROTOCOL>://<BACKEND_HOST>:<BACKEND_PORT>/api/v1'
 };

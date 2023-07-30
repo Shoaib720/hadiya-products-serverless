@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiGatewayURL: 'http://localhost:3000/api/v1'
+  apiGatewayURL: '<PROTOCOL>://<BACKEND_HOST>:<BACKEND_PORT>/api/v1'
 };
 
 /*
