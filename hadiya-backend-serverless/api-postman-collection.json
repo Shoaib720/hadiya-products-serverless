@@ -1,0 +1,153 @@
+{
+	"info": {
+		"_postman_id": "022ab505-8b50-4b99-ab3e-449f2e12cb1e",
+		"name": "ProductsAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11284599"
+	},
+	"item": [
+		{
+			"name": "Get Products",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/api/v1/products",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Product",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJraWQiOiI0cnRPbXh6UnlnZmxSYWxPcndCY21hdE05dGlMVFo3S2tUdldUcVZvSXg4PSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwNGY4YTQxOC0yMDUxLTcwM2EtOTdhOS1hODBmYjFmMjI1NDkiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9yaDNDdXVESTkiLCJ2ZXJzaW9uIjoyLCJjbGllbnRfaWQiOiI1cms2ZzVsYnQ1ZXJ0cW42ZHBnajdsaGp0cSIsImV2ZW50X2lkIjoiMzQ4MDIwZWQtOGYxNC00YjJiLThkYjMtYjVjZWFlY2JiNjQwIiwidG9rZW5fdXNlIjoiYWNjZXNzIiwic2NvcGUiOiJhd3MuY29nbml0by5zaWduaW4udXNlci5hZG1pbiBwaG9uZSBvcGVuaWQgcHJvZmlsZSBodHRwczpcL1wvcHJvZHVjdHMtYXBpLmFsbWlraGRhYW0uY28uaW5cL3Byb2R1Y3RzLmRlbGV0ZSBlbWFpbCBodHRwczpcL1wvcHJvZHVjdHMtYXBpLmFsbWlraGRhYW0uY28uaW5cL3Byb2R1Y3RzLnBvc3QiLCJhdXRoX3RpbWUiOjE2OTA1MjQ4OTcsImV4cCI6MTY5MDUyODQ5NywiaWF0IjoxNjkwNTI0ODk3LCJqdGkiOiI0ODdhY2NhNi0xZjYzLTQ3MzMtOTc0MS0xYjg4NzY3NGQzZGEiLCJ1c2VybmFtZSI6IjA0ZjhhNDE4LTIwNTEtNzAzYS05N2E5LWE4MGZiMWYyMjU0OSJ9.nx0iymT2jrNMQbgRChK0WywknaFanY7xTHD29csWCR9nqJwv5Vt0re7tLYMbw7exWXCmlp8E2z6MDvnVo95olxSZ3Ovxb1sh7rFDlH7ntslRvPSqtPKmJFkNedzbmNgU-K5ril2PbHFzZrM3y0NRxetFac6P3kwH79qO4ntqBzY1nYJXQMbGaRaDiQUOSa_mE0jBI1Q4h2ZUyl8TPvghE165FNEOl5MgzAHPKYRr4jOMPvTofx1ZWa5Zs6nmKkHAw3O7YiUQEaHc82aKO-xtLbOKC_e_X8ocLvh91ayAFeloZTEbSduTdQlkujHIxq3x5SFEeqsweigf3SfhxfvyzQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"BoAt New Headphones 255+\",\n    \"price\": 4499.00,\n    \"currency\": \"INR\",\n    \"imageURL\": \"https://cdn.shopify.com/s/files/1/0057/8938/4802/products/35ca6350-d6f3-4bc2-a742-01b2c88d80c4_700x.png?v=1673005509\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/api/v1/products",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get product by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/api/v1/products?id=6b301d50-d439-4bc3-9575-0bfe93724a3e",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"products"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "6b301d50-d439-4bc3-9575-0bfe93724a3e"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete product",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/api/v1/products?id=c961f25c-e2a6-49d3-bacb-63262febce40",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"products"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "c961f25c-e2a6-49d3-bacb-63262febce40"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update product",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n                \"currency\": \"INR\",\n                \"imageURL\": \"https://m.media-amazon.com/images/I/514FlU4YKBS._SL1080_.jpg\",\n                \"id\": \"6b301d50-d439-4bc3-9575-0bfe93724a3e\",\n                \"price\": 71599,\n                \"name\": \"Dell Inspiron 7415 AMD R5 5500U 14 inches(35cm) FHD Touch Display 2 in 1 Business Laptop (8GB/512GB SSD/Intel Integrated Graphics/Win 10 + MSO/Backlit KB + FPR + Active Pen /Pebble Metal Color, 1.5kg)\"\n            }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/api/v1/products?id=6b301d50-d439-4bc3-9575-0bfe93724a3e",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"products"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "6b301d50-d439-4bc3-9575-0bfe93724a3e"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
